@@ -24,7 +24,7 @@ if (x > (startResolution + resolution["x"]/16 * 3.75) - 2 and x <= (endResolutio
 os.sleep(0.1) end end
 function closeButton() for x = resolution["x"] - 3, resolution["x"] do for y = 1, 3 do colorTo(0x696969, x, y, " ") if(x == resolution["x"] - 2 and y == 2) then colorTo(0x696969, x, y, "♥") gpu.setBackground(0x000000) end end end end 
 function taskBar() for x = 0, resolution["x"] do colorTo(0x696969, x, resolution["y"], " ") end end
-function startup() clearScreen() startupHeart() clearScreen() closeButton() taskBar() term.setCursor(11, resolution["y"]) print("Michelle.dll") term.setCursor(1, 1) end
+function startup() clearScreen() startupHeart() clearScreen() closeButton() taskBar() term.setCursor(11, resolution["y"]) print("A File.dll") term.setCursor(1, 1) end
 function desktop() clearScreen() closeButton() taskBar() term.setCursor(11, resolution["y"]) print("document.dll") term.setCursor(1, 1) end
 startup()
 checkForClick()
